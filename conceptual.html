@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+     
+    <section class="flex flex-col lg:flex-row">
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="./images/images/Rectangle 4.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ps-16">Pink Flower</h2>
+                  <p class="text-center">price:<span id="price-one">30</span>tk</p>
+                  <div class="card-actions justify-center">
+                    <button id="btn-one" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="./images/images/Rectangle 5.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ps-16">Pink Flower</h2>
+                  <p class="text-center">price:<span id="price-two">20</span> tk</p>
+                  <div class="card-actions justify-center">
+                    <button id="btn-two" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="./images/images/Rectangle 6.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ps-16">Pink Flower</h2>
+                  <p class="text-center">price: <span id="price-three">90</span> tk</p>
+                  <div class="card-actions justify-center">
+                    <button id="btn-three" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="w-[300px] text-center text-3xl font-semibold">
+            <h4 id="selected-item" >Code: Hero</h4>
+            <h4>Total:<span id="total">00</span></h4>
+            <h6>Discount:<span id="discount">30</span>%</h6>
+            
+            <h5>Grand Total: <span id="grand-total">00</span></h5>
+            <hr />
+        </div>
+    </section>
+    <!-- <section class="flex flex-col lg:flex-row">
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="./images/images/Rectangle 4.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ps-16">Pink Flower</h2>
+                  <p class="text-center">price: 30 tk</p>
+                  <div class="card-actions justify-center">
+                    <button onclick="handleClickBtn(this)" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="./images/images/Rectangle 5.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ps-16">Pink Flower</h2>
+                  <p class="text-center">price: 20 tk</p>
+                  <div class="card-actions justify-center">
+                    <button onclick="handleClickBtn(this)"  class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card bg-base-100 shadow-xl">
+                <figure><img src="./images/images/Rectangle 6.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title ps-16">Pink Flower</h2>
+                  <p class="text-center">price: 90 tk</p>
+                  <div class="card-actions justify-center">
+                    <button onclick="handleClickBtn(this)" class="btn btn-primary">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="w-[300px] text-center">
+            <h4 id="selected-item" >Code: Hero</h4>
+            <h6 id="total">total:00</h6>
+            <h6>discount:<span>00</span></h6>
+            <hr />
+            <h5>grand Total: <span>00</span></h5>
+        </div>
+    </section> -->
+    <script src="js/index.js"></script>
+    <script src="js/conceptual.js"></script>
+  </body>
+</html>

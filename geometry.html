@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar-center">
+          <a class="btn btn-ghost normal-case text-3xl font-semibold">Geometry Genius</a>
+        </div>
+    </header>
+    <main>
+        <section class="flex flex-col lg:flex-row">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- triangle card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                      <h2 class="card-title ps-[100px]">Triangle</h2>
+                      <p>Area (A) = 0.5 X b X h</p>
+                        <div class="mb-4">
+                            <input type="text" name="" id="triangle-b" class="w-12 mr-6 text-center" placeholder="b">
+                        <input type="text" name="" id="triangle-h" class="w-12 text-center" placeholder="h">
+                        </div>
+                      <p class="mb-3">Area:<span id="area-triangle">0</span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-triangle" class="btn btn-primary mb-3">Buy Now</button>
+                      </div>
+                    </div>
+                <!-- rectangle card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                      <h2 class="card-title ps-[100px]">Rectangle</h2>
+                      <p>Area (A) = w X l</p>
+                        <div class="mb-4">
+                            <input type="text" name="" id="rectangle-w" class="w-12 mr-6 text-center" placeholder="w">
+                        <input type="text" name="" id="rectangle-l" class="w-12 text-center" placeholder="l">
+                        </div>
+                      <p class="mb-3">Area:<span id="area-rectangle">0</span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-rectangle" class="btn btn-primary mb-3">Buy Now</button>
+                      </div>
+                    </div>
+                <!-- parallelogram card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                      <h2 class="card-title ps-[100px]">Parallelogram</h2>
+                      <p>Area (A) =  b X h</p>
+                        <div class="mb-4">
+                            <input type="text" name="" id="parallelogram-b" class="w-12 mr-6 text-center" placeholder="b">
+                        <input type="text" name="" id="parallelogram-h" class="w-12 text-center" placeholder="h">
+                        </div>
+                      <p class="mb-3">Area:<span id="area-parallelogram">0</span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-parallelogram" class="btn btn-primary mb-3">Buy Now</button>
+                      </div>
+                    </div>
+                <!-- rhombus card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+                      <h2 class="card-title ps-[100px]">Rhombus</h2>
+                      <p>Area (A) = 0.5 X b X h</p>
+                        <div class="mb-4">
+                            <input type="text" name="" id="rhombus-b" class="w-12 mr-6 text-center" placeholder="b">
+                        <input type="text" name="" id="rhombus-h" class="w-12 text-center" placeholder="h">
+                        </div>
+                      <p class="mb-3">Area:<span id="area-rhombus">0</span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-rhombus" class="btn btn-primary mb-3">Buy Now</button>
+                      </div>
+                    </div>
+                <!-- pentagon card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="/images/pentagon.png" alt="Shoes" /></figure>
+                      <h2 class="card-title ps-[100px]">Pentagon</h2>
+                      <p>Area (A) = 0.5 X b X h</p>
+                        <div class="mb-4">
+                            <input type="text" name="" id="pentagon-b" class="w-12 mr-6 text-center" placeholder="b">
+                        <input type="text" name="" id="pentagon-h" class="w-12 text-center" placeholder="h">
+                        </div>
+                      <p class="mb-3">Area:<span id="area-pentagon">0</span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-pentagon" class="btn btn-primary mb-3">Buy Now</button>
+                      </div>
+                    </div>
+                <!-- ellipse card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                      <h2 class="card-title ps-[100px]">Ellipse</h2>
+                      <p>Area (A) = 0.5 X b X h</p>
+                        <div class="mb-4">
+                            <input type="text" name="" id="ellipse-b" class="w-12 mr-6 text-center" placeholder="b">
+                        <input type="text" name="" id="ellipse-h" class="w-12 text-center" placeholder="h">
+                        </div>
+                      <p class="mb-3">Area:<span id="area-ellipse">0</span>cm<sup>2</sup></p>
+                      <div class="card-actions justify-center">
+                        <button id="btn-ellipse" class="btn btn-primary mb-3">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="w-[400px]">
+                <h1 class="text-center text-3xl font-medium">Area Calculation</h1>
+                <div id="calculation-entry" class="ms-32">
+
+                </div>
+            </div>
+        </section>
+        <section>
+          <a id="conceptual" class="btn bg-green-600 ms-[400px] mt-8">Conceptual Session</a>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+<script src="js/geometry.js"></script>
+</body>
+</html>
