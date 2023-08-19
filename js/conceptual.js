@@ -11,9 +11,7 @@
 // // console.log(price);
 // total = parseInt(total) + parseInt(price);
 // document.getElementById('total').innerText=total;
-
 // } 
-
 
 // 2nd system
 let priceOneTotal = 0
@@ -40,3 +38,6 @@ document.getElementById('btn-three').addEventListener('click',function(){
      const discountElementText = elementField('discount')
     document.getElementById('grand-total').innerText = totalPriceThree *discountElementText / 100
 });
+document.getElementById('money').addEventListener('click',function(){
+    window.location.href ='moneyMaster.html';
+})

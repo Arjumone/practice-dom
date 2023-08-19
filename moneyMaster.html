@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center">
+        <h1 class="text-4xl font-bold">Money Master</h1>
+    </header>
+    <main>
+        <section class="flex flex-col lg:flex-row">
+            <div class="flex-1">
+                <img src="./images/Th11-Paper-money.jpg" alt="">
+            </div>
+            <div class="w-[600px] text-center">
+                <h2 class="text-center font-medium text-2xl">Income</h2>
+                <p class="ms-32">Income: <input id="income" type="text" class="bg-slate-200"></p>
+                <h2 class="text-center font-medium text-2xl mb-3">Expenses</h2>
+                <p class="ms-32">Food: <input id="food" type="text" class="bg-slate-200 mb-2"></p>
+                <p class="ms-32">Rent: <input id="rent" type="text" class="bg-slate-200 mb-2"></p>
+                <p class="ms-32">Clothes: <input id="clothes" type="text" class="bg-slate-200"></p>
+                <button id="calculate-btn" class="btn bg-sky-500 justify-center ms-44 mt-4">Calculate</button>
+                <p>Total Expenses: <span id="total-expenses">00</span></p>
+                <p>Balance: <span id="balance">00</span></p>
+                <p><input id="save" type="text" class="bg-slate-200" placeholder="save">%</p> <button onclick="saveClick(this)"  class="inline btn bg-teal-300 my-2">Save</button>
+                <p>Saving Amount: <span id="saving-amount">00</span></p>
+                <p>Remaining Balance: <span id="remaining-balance">00</span></p>
+
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="js/moneyMaster.js"></script>
+</body>
+</html>
